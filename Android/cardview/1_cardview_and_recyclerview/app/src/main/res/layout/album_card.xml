@@ -47,7 +47,7 @@
                 android:textSize="12sp" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/overflow"
                 android:layout_width="@dimen/ic_album_overflow_width"
                 android:layout_height="@dimen/ic_album_overflow_height"
                 android:layout_alignParentRight="true"
