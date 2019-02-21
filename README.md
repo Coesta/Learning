@@ -1,3 +1,3 @@
 # Learning
 
-Repositório com todos os tutoriais que implementei ou venho implementando separados e pastas;
+Repositório com a implementação de tutoriais ou cursos feitos, todos separados em pastas;
