@@ -2,23 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2f1bb40-a0da-4b16-9dda-86eaf8ee8a30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/Break1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/Break2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/Continue.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/DoWhile.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/For1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/For2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/For3.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/For4.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/IfElseIf.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/RefatorandoParaWhen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/While1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/controles/While2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/operadores/Aritmeticos.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/operadores/Atribuicao.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/operadores/Destructuring.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/operadores/Logicos.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fundamentos/operadores/Relacionais.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CursoKotlin/META-INF/CursoKotlin.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CursoKotlin/META-INF/CursoKotlin.kotlin_module" afterDir="false" />
     </list>
@@ -31,49 +14,9 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fundamentos/operadores/Atribuicao.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fundamentos/operadores/Relacionais.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/fundamentos/operadores/Logicos.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fundamentos/operadores/Destructuring.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fundamentos/operadores/Aritmeticos.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -169,6 +112,37 @@
             <path>
               <item name="CursoKotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="CursoKotlin" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CursoKotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CursoKotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CursoKotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CursoKotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CursoKotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CursoKotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="CursoKotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CursoKotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CursoKotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
+              <item name="CursoKotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CursoKotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CursoKotlin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -191,7 +165,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551191918031" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551191934966" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -325,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551180533445</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Aula 46. Operadores: Lógicos">
+      <created>1551191968107</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551191968107</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -339,7 +320,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1094" y="9" width="827" height="1028" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30508474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -350,14 +330,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32960895" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298731" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298731" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.35418993" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.35418993" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -414,7 +394,8 @@
     <MESSAGE value="Aula 16. Exemplo de função 01" />
     <MESSAGE value="Aula 23. Forçando NullPointerException" />
     <MESSAGE value="Aula 28. Estrutura de Controle: If/Else #02" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 28. Estrutura de Controle: If/Else #02" />
+    <MESSAGE value="Aula 46. Operadores: Lógicos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 46. Operadores: Lógicos" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/fundamentos/PrimeiroPrograma.kt">
@@ -473,20 +454,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fundamentos/Comentarios.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -705,10 +676,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fundamentos/operadores/Logicos.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="272">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
