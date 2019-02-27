@@ -1,4 +1,4 @@
-package fundamentos.funcoes
+package funcoes
 
 fun min(a: Int, b: Int): Int = if(a < b) a else b
 
