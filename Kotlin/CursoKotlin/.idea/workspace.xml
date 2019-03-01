@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2f1bb40-a0da-4b16-9dda-86eaf8ee8a30" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/classes/ClasseBasica1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/ClasseBasica2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/Membros1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/classes/Membros2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/ChamandoFuncaoKotlin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/FuncaoComoParam1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/FuncaoComoParam2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/FuncaoInfix.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/InLine1.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/InLine2.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/MultiplosRetornos.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/ParametrosImutaveis.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/ParamsPadroes.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/SegundoElementoList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/UnitReturn.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/funcoes/VarArgs.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/BlocoInit.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/ClassVsDataClass.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Construtor1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Construtor2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Enum1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/Enum2.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/GettersCalculados.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/GettersSetters.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/MembrosClasseVsInstancia.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/PassagemReferencia.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/classes/TiposVariaveis.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CursoKotlin/META-INF/CursoKotlin.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CursoKotlin/META-INF/CursoKotlin.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fundamentos/funcoes/ArgsNomeados.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcoes/ArgsNomeados.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fundamentos/funcoes/TopLevel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/funcoes/TopLevel.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,91 +26,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/funcoes/FuncaoInfix.kt">
+        <entry file="file://$PROJECT_DIR$/src/classes/TiposVariaveis.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+            <state relative-caret-position="260">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/funcoes/UnitReturn.kt">
+        <entry file="file://$PROJECT_DIR$/src/classes/ClassVsDataClass.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/BlocoInit.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/funcoes/FuncaoComoParam1.kt">
+        <entry file="file://$PROJECT_DIR$/src/classes/GettersSetters.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="187">
+              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/funcoes/FuncaoComoParam2.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/funcoes/InLine1.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/funcoes/InLine2.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/ClasseBasica1.kt">
+        <entry file="file://$PROJECT_DIR$/src/classes/GettersCalculados.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/ClasseBasica2.kt">
+        <entry file="file://$PROJECT_DIR$/src/classes/MembrosClasseVsInstancia.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/classes/Membros1.kt">
+        <entry file="file://$PROJECT_DIR$/src/classes/PassagemReferencia.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="144">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/Enum1.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/classes/Membros2.kt">
+        <entry file="file://$PROJECT_DIR$/src/classes/Enum2.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/classes/Construtor2.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -148,17 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/fundamentos/OperadorElvis.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/ForcandoExcecaoNullPointer.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/pacoteA/Mistura.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/pacoteB/Matematica.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/TesteImport.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/controles/if.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/controles/IfElse.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/controles/IfElse2.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/controles/IfElseIf.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/controles/RefatorandoParaWhen.kt" />
-        <option value="$PROJECT_DIR$/src/fundamentos/controles/While1.kt" />
         <option value="$PROJECT_DIR$/src/fundamentos/controles/While2.kt" />
         <option value="$PROJECT_DIR$/src/fundamentos/controles/For1.kt" />
         <option value="$PROJECT_DIR$/src/fundamentos/controles/For2.kt" />
@@ -199,6 +181,17 @@
         <option value="$PROJECT_DIR$/src/classes/ClasseBasica2.kt" />
         <option value="$PROJECT_DIR$/src/classes/Membros1.kt" />
         <option value="$PROJECT_DIR$/src/classes/Membros2.kt" />
+        <option value="$PROJECT_DIR$/src/classes/TiposVariaveis.kt" />
+        <option value="$PROJECT_DIR$/src/classes/ClassVsDataClass.kt" />
+        <option value="$PROJECT_DIR$/src/classes/Construtor1.kt" />
+        <option value="$PROJECT_DIR$/src/classes/Construtor2.kt" />
+        <option value="$PROJECT_DIR$/src/classes/BlocoInit.kt" />
+        <option value="$PROJECT_DIR$/src/classes/GettersSetters.kt" />
+        <option value="$PROJECT_DIR$/src/classes/GettersCalculados.kt" />
+        <option value="$PROJECT_DIR$/src/classes/MembrosClasseVsInstancia.kt" />
+        <option value="$PROJECT_DIR$/src/classes/PassagemReferencia.kt" />
+        <option value="$PROJECT_DIR$/src/classes/Enum1.kt" />
+        <option value="$PROJECT_DIR$/src/classes/Enum2.kt" />
       </list>
     </option>
   </component>
@@ -243,7 +236,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551289821282" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551443090161" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -262,67 +255,67 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.classes.Membros2Kt">
-    <configuration name="classes.ClasseBasica1Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.classes.Enum2Kt">
+    <configuration name="classes.Enum1Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="CursoKotlin" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="classes.ClasseBasica1Kt" />
+      <option name="MAIN_CLASS_NAME" value="classes.Enum1Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classes.ClasseBasica2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="classes.Enum2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="CursoKotlin" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="classes.ClasseBasica2Kt" />
+      <option name="MAIN_CLASS_NAME" value="classes.Enum2Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classes.Membros1Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="classes.GettersCalculadosKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="CursoKotlin" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="classes.Membros1Kt" />
+      <option name="MAIN_CLASS_NAME" value="classes.GettersCalculadosKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="classes.Membros2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="classes.MembrosClasseVsInstanciaKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="CursoKotlin" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="classes.Membros2Kt" />
+      <option name="MAIN_CLASS_NAME" value="classes.MembrosClasseVsInstanciaKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="funcoes.InLine2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="classes.PassagemReferenciaKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="CursoKotlin" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="funcoes.InLine2Kt" />
+      <option name="MAIN_CLASS_NAME" value="classes.PassagemReferenciaKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -330,11 +323,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.classes.Membros2Kt" />
-        <item itemvalue="Kotlin.classes.Membros1Kt" />
-        <item itemvalue="Kotlin.classes.ClasseBasica2Kt" />
-        <item itemvalue="Kotlin.classes.ClasseBasica1Kt" />
-        <item itemvalue="Kotlin.fundamentos.funcoes.InLine2Kt" />
+        <item itemvalue="Kotlin.classes.Enum2Kt" />
+        <item itemvalue="Kotlin.classes.Enum1Kt" />
+        <item itemvalue="Kotlin.classes.PassagemReferenciaKt" />
+        <item itemvalue="Kotlin.classes.MembrosClasseVsInstanciaKt" />
+        <item itemvalue="Kotlin.classes.GettersCalculadosKt" />
       </list>
     </recent_temporary>
   </component>
@@ -398,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551204923482</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Aula 72. Classe: Membros #02.&#10;&#10;Nessa aula, Leonardo explica mais sobre os atributos e os métodos (funções) e ensina a técnica de encadeamento de chamadas, que pode ser utilizada em várias outras linguagens.">
+      <created>1551290138471</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551290138471</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -414,7 +414,7 @@
     <frame x="1124" y="9" width="797" height="1028" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3175034" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.31614655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -423,14 +423,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32960895" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42793295" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3298731" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298731" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.35418993" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5006784" side_tool="true" weight="0.35418993" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49932158" weight="0.35418993" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -490,89 +490,10 @@
     <MESSAGE value="Aula 46. Operadores: Lógicos" />
     <MESSAGE value="Aula 46. Operadores: Lógicos... arquivos faltantes" />
     <MESSAGE value="Aula 55. Argumentos Nomeados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 55. Argumentos Nomeados" />
+    <MESSAGE value="Aula 72. Classe: Membros #02.&#10;&#10;Nessa aula, Leonardo explica mais sobre os atributos e os métodos (funções) e ensina a técnica de encadeamento de chamadas, que pode ser utilizada em várias outras linguagens." />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 72. Classe: Membros #02.&#10;&#10;Nessa aula, Leonardo explica mais sobre os atributos e os métodos (funções) e ensina a técnica de encadeamento de chamadas, que pode ser utilizada em várias outras linguagens." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/ChamadaSegura.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/pacoteB/Matematica.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/pacoteA/Mistura.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/TesteImport.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <element signature="e#21#210#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/controles/if.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/controles/IfElse.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/controles/IfElse2.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/controles/IfElseIf.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/controles/RefatorandoParaWhen.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="41" lean-forward="true" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/controles/While1.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fundamentos/controles/While2.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fundamentos/controles/For1.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -668,13 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -851,8 +765,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/classes/Membros2.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
+        <state relative-caret-position="439">
           <caret line="34" column="41" lean-forward="true" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-918">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Construtor1.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/TiposVariaveis.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Construtor2.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/ClassVsDataClass.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/BlocoInit.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/GettersSetters.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/GettersCalculados.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/MembrosClasseVsInstancia.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/PassagemReferencia.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Enum1.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="56" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/classes/Enum2.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
