@@ -1,4 +1,4 @@
-package com.leocoesta.meucronmetro
+package com.leocoesta.meucronometro
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

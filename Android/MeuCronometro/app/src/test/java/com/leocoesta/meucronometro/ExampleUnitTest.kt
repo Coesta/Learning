@@ -1,4 +1,4 @@
-package com.leocoesta.meucronmetro
+package com.leocoesta.meucronometro
 
 import org.junit.Test
 
