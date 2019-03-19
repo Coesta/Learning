@@ -52,5 +52,18 @@ class PrefUtil {
             editor.putLong(SECONDS_REMAINING_ID, seconds)
             editor.apply()
         }
+
+        private const val ALARM_SET_TIME_ID = "com.leocoesta.timer.backgrounded_time"
+
+        fun getAlarmSetTime(context: Context): Long {
+            val preferences = PreferenceManager.getDefaultSharedPreferences(context)
+            return preferences.getLong(ALARM_SET_TIME_ID, 0)
+        }
+
+        fun setAlarmSetTimer(time: Long, context: Context) {
+            val editor = PreferenceManager.getDefaultSharedPreferences(context).edit()
+            editor.putLong(ALARM_SET_TIME_ID, time)
+            editor.apply()
+        }
     }
 }
