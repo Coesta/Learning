@@ -9,6 +9,7 @@ import android.os.CountDownTimer
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
+import com.leocoesta.meucronometro.util.NotificationUtil
 import com.leocoesta.meucronometro.util.PrefUtil
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -83,7 +84,7 @@ class MainActivity : AppCompatActivity() {
         initTimer()
 
         removeAlarm(this)
-        //TODO: hide notification
+        NotificationUtil.hideTimerNotification(this)
     }
 
     override fun onPause() {
@@ -92,9 +93,9 @@ class MainActivity : AppCompatActivity() {
         if (timerState == TimerState.RUNNING) {
             timer.cancel()
             val wakeUpTime = setAlarm(this, nowSeconds, secondsRemaining)
-            // TODO: show notification
+            NotificationUtil.showTimerRunning(this, wakeUpTime)
         } else if (timerState == TimerState.PAUSED) {
-            // TODO: show notification
+            NotificationUtil.showTimerPaused(this)
         }
 
         PrefUtil.setPreviousTimerLengthSeconds(timerLengthSeconds, this)
