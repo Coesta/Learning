@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">RoomWordSampleKT</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Lista de Palavras (Kotlin)</string>
+    <string name="action_settings">Preferências</string>
 </resources>
