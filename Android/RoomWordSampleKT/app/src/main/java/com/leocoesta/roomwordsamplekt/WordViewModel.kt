@@ -9,23 +9,21 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import kotlin.coroutines.CoroutineContext
 
-class WordViewMoldel(application: Application) : AndroidViewModel(application) {
+class WordViewModel(application: Application) : AndroidViewModel(application) {
+
+    private var parentJob = Job()
+    private val coroutineContext: CoroutineContext
+        get() = parentJob + Dispatchers.Main
+    private val scope = CoroutineScope(coroutineContext)
 
     private val repository: WordRepository
     val allWords: LiveData<List<Word>>
 
     init {
-        val wordsDao = WordRoomDatabase.getDatabase(application).wordDao()
+        val wordsDao = WordRoomDatabase.getDatabase(application, scope).wordDao()
         repository = WordRepository(wordsDao)
         allWords = repository.allWords
     }
-
-    private var parentJob = Job()
-
-    private val coroutineContext: CoroutineContext
-        get() = parentJob + Dispatchers.Main
-
-    private val scope = CoroutineScope(coroutineContext)
 
     fun insert(word: Word) = scope.launch(Dispatchers.IO) {
         repository.insert(word)

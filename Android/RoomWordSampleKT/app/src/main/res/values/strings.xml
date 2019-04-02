@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">Lista de Palavras (Kotlin)</string>
+    <string name="app_name">Lista de Países (Kotlin)</string>
     <string name="action_settings">Preferências</string>
+    <string name="hint_word">País…</string>
+    <string name="button_save">Salvar</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
 </resources>
