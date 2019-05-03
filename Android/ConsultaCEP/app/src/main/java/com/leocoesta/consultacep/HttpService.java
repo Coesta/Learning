@@ -45,6 +45,8 @@ public class HttpService extends AsyncTask<Void, Void, CEP> {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
 
         }
