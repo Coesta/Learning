@@ -28,4 +28,7 @@ dependencies {
 
     //RETROFIT
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+
+    //Jackson
+    implementation 'com.squareup.retrofit2:converter-jackson:2.3.0'
 }
