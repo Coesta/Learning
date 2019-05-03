@@ -14,4 +14,8 @@ public class RetrofitConfig {
                 .build();
     }
 
+    public CEPService getCEPService() {
+        return this.retrofit.create(CEPService.class);
+    }
+
 }
