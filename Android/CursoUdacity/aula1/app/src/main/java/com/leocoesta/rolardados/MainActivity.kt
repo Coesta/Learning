@@ -9,9 +9,13 @@ import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
+    lateinit var imagemDado : ImageView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        imagemDado = findViewById(R.id.dado_image)
 
         val rolarDadosBt : Button = findViewById(R.id.rolar_dados_bt)
         rolarDadosBt.setOnClickListener {
@@ -31,7 +35,6 @@ class MainActivity : AppCompatActivity() {
             else -> R.drawable.dice_6
         }
 
-        val imagemDado : ImageView = findViewById(R.id.dado_image)
         imagemDado.setImageResource(resourceDrawable)
 
     }
