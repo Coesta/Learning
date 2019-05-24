@@ -4,4 +4,11 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nome"
+        android:textAlignment="center"
+        style="@style/nome_style" />
 </LinearLayout>
