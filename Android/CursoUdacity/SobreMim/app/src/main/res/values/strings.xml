@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">SobreMim</string>
     <string name="nome">Leonardo Costa</string>
+    <string name="estrela_amarela">Estrela Amarela</string>
+
+    <string name="biografia">Olá meu nome é Leonardo Costa.
+    \n\nTambém sou conhecido como Léo, Bahia, Coe, entre outros apelidos
+    \n\nSou um baiano que mora em Sergipe.
+    \nAtualmente sou um desenvolvedor de aplicativos Android na SEFAZ-SE.
+        Sou fã da Google e por mim ela pode roubar todos os meus dados.
+    \n\nTento melhorar a minha pessoa todos os dias, por estudar desenvolvimento pessoal,
+        inteligência emocional, assuntos relacionados a minha profissão e sobre a Bíblia.
+    \n\nGosto de trabalhar com pessoas excepcionais, mas que também são humildes e se importam
+        com o próximo. Tenho dois defeitos principais, sou um pouco perfeccionista e ansioso.
+    \n\nMinha meta de viagem a médio prazo é conhecer o Chile e o Peru, conhecer os Andes e os
+        desertos de lá.
+    \n\nPrezo pelo respeito e dignidade ao próximo. Algo que está cada vez mais em escassez.
+    </string>
+    <string name="hint_informar_apelido">Qual é o seu apelido?</string>
+    <string name="enviar_button">Enviar</string>
 </resources>
