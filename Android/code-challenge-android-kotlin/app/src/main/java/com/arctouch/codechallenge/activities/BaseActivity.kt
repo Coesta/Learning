@@ -1,4 +1,4 @@
-package com.arctouch.codechallenge.base
+package com.arctouch.codechallenge.activities
 
 import android.support.v7.app.AppCompatActivity
 import com.arctouch.codechallenge.api.TmdbApi
