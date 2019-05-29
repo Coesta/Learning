@@ -4,12 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import android.widget.TextView
 import com.arctouch.codechallenge.R
 import com.arctouch.codechallenge.adapters.HomeAdapter
 import com.arctouch.codechallenge.api.RetrofitConfig.Companion.api
 import com.arctouch.codechallenge.api.TmdbApi
 import com.arctouch.codechallenge.data.Cache
 import com.arctouch.codechallenge.model.Movie
+import com.arctouch.codechallenge.util.verifyAvailableNetwork
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.home_activity.*
@@ -18,11 +20,19 @@ import java.io.Serializable
 class HomeActivity : AppCompatActivity(), HomeAdapter.OnItemListener {
 
     lateinit var moviesWithGenres: List<Movie>
+    lateinit var connectionText: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_activity)
-        getGenres()
+
+        connectionText = findViewById(R.id.connection_off_text)
+
+        if (verifyAvailableNetwork(this)) {
+            connectionText.visibility = View.GONE
+            getGenres()
+        } else
+            connectionText.visibility = View.VISIBLE
     }
 
     private fun getGenres() {

@@ -3,4 +3,5 @@
     <string name="movie_and_genres">%s - %s</string>
     <string name="backdrop_image">Backdrop image</string>
     <string name="poster_image">Poste image</string>
+    <string name="connection_off">Sem conexão com a internet!</string>
 </resources>
