@@ -1,69 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/layout_margin"
     android:orientation="vertical"
     tools:context=".activities.DetailMovieActivity">
 
-    <ImageView
-        android:id="@+id/detail_backdrop_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="@string/backdrop_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_image_placeholder" />
-
-    <ImageView
-        android:id="@+id/detail_poster_image"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:contentDescription="@string/poster_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detail_backdrop_image"
-        app:srcCompat="@drawable/ic_image_placeholder" />
-
-    <TextView
-        android:id="@+id/detail_title_text"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/detail_poster_image"
-        tools:layout_editor_absoluteX="0dp" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/detail_genres_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/detail_title_text"
-        tools:layout_editor_absoluteX="0dp" />
+        <ImageView
+            android:id="@+id/detail_backdrop_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/backdrop_image"
+            app:srcCompat="@drawable/ic_image_placeholder" />
 
-    <TextView
-        android:id="@+id/detail_overview_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/detail_genres_text"
-        tools:layout_editor_absoluteX="0dp" />
+        <ImageView
+            android:id="@+id/detail_poster_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/poster_image"
+            app:srcCompat="@drawable/ic_image_placeholder" />
 
-    <TextView
-        android:id="@+id/detail_release_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintTop_toBottomOf="@+id/detail_overview_text"
-        tools:layout_editor_absoluteX="27dp" />
+        <TextView
+            android:id="@+id/detail_title_text"
+            style="@style/text_style_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/detail_release_text"
+            style="@style/text_style_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/detail_genres_text"
+            style="@style/text_style_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/detail_overview_text"
+            style="@style/text_style_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="@dimen/lineSpacing"
+            android:text="TextView"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>

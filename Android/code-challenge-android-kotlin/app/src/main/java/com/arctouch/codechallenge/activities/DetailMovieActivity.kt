@@ -25,8 +25,7 @@ class DetailMovieActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_movie)
         movie = intent.extras.get(MOVIE_DETAIL) as Movie
-        Toast.makeText(this, movie.title, Toast.LENGTH_SHORT).show()
-
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         initializeViews()
     }
 
@@ -48,5 +47,10 @@ class DetailMovieActivity : AppCompatActivity() {
                 .load(movie.backdropPath?.let { MovieImageUrlBuilder.buildPosterUrl(it) })
                 .apply(RequestOptions().placeholder(R.drawable.ic_image_placeholder))
                 .into(backdropImage)
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return super.onSupportNavigateUp()
     }
 }
