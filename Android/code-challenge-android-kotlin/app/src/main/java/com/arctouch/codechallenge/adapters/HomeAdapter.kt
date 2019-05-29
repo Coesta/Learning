@@ -11,11 +11,11 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import kotlinx.android.synthetic.main.movie_item.view.*
 
-class HomeAdapter(private val movies: List<Movie>, private val mOnItemListener: OnItemListener) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
+class HomeAdapter(private val movies: MutableList<Movie>, private val mOnItemListener: OnItemListener) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View, private val mOnItemListener: OnItemListener) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
-//        private val movieImageUrlBuilder = MovieImageUrlBuilder()
+        private val movieImageUrlBuilder = MovieImageUrlBuilder()
 
         fun bind(movie: Movie) {
             itemView.titleTextView.text = movie.title
@@ -44,4 +44,9 @@ class HomeAdapter(private val movies: List<Movie>, private val mOnItemListener: 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) = holder.bind(movies[position])
 
     interface OnItemListener { fun onItemClick(position: Int)}
+
+    fun addData(movies: MutableList<Movie>) {
+        movies.addAll(movies)
+        notifyDataSetChanged()
+    }
 }
