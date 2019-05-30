@@ -10,9 +10,7 @@ import android.view.View
 import android.widget.TextView
 import com.arctouch.codechallenge.R
 import com.arctouch.codechallenge.adapters.HomeAdapter
-import com.arctouch.codechallenge.api.RetrofitConfig
 import com.arctouch.codechallenge.api.RetrofitConfig.Companion.api
-import com.arctouch.codechallenge.api.RetrofitConfig.Companion.getUpcomingMovies
 import com.arctouch.codechallenge.api.TmdbApi
 import com.arctouch.codechallenge.data.Cache
 import com.arctouch.codechallenge.listeners.InfiniteScrollListener
@@ -32,19 +30,13 @@ class HomeActivity : AppCompatActivity(), HomeAdapter.OnItemListener, InfiniteSc
     lateinit var infiniteScrollListener: InfiniteScrollListener
     lateinit var homeAdapter: HomeAdapter
     var pageCounter: Long = 0
+    var position: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.home_activity)
 
-        connectionText = findViewById(R.id.connection_off_text)
-        recyclerView = findViewById(R.id.recyclerView)
-        homeAdapter = HomeAdapter(emptyList<Movie>().toMutableList(), this)
-        manager = LinearLayoutManager(this)
-        recyclerView.layoutManager = manager
-        infiniteScrollListener = InfiniteScrollListener(manager, this)
-        infiniteScrollListener.setLoaded()
-        recyclerView.addOnScrollListener(infiniteScrollListener)
+        initViews()
 
         if (verifyAvailableNetwork(this)) {
             connectionText.visibility = View.GONE
@@ -53,25 +45,52 @@ class HomeActivity : AppCompatActivity(), HomeAdapter.OnItemListener, InfiniteSc
             connectionText.visibility = View.VISIBLE
     }
 
+    private fun initViews() {
+        connectionText = findViewById(R.id.connection_off_text)
+        recyclerView = findViewById(R.id.recyclerView)
+        homeAdapter = HomeAdapter(emptyList<Movie>().toMutableList(), this)
+        recyclerView.adapter = homeAdapter
+        manager = LinearLayoutManager(this)
+        recyclerView.layoutManager = manager
+        infiniteScrollListener = InfiniteScrollListener(manager, this)
+        infiniteScrollListener.setLoaded()
+        recyclerView.addOnScrollListener(infiniteScrollListener)
+    }
+
     private fun getGenres() {
         api.genres(TmdbApi.API_KEY, TmdbApi.DEFAULT_LANGUAGE)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe {
                     Cache.cacheGenres(it.genres)
-                    getUpcomingMovies()
+                    getNewPage()
                 }
     }
 
-    private fun getUpcomingMovies() {
-        moviesWithGenres = getNewPage()
-        recyclerView.adapter = HomeAdapter(moviesWithGenres, this)
-        progressBar.visibility = View.GONE
+    private fun getNewPage() {
+        pageCounter++
+        position += 20
+        getUpcomingMovies()
     }
 
-    private fun getNewPage(): MutableList<Movie> {
-        pageCounter++
-        return getUpcomingMovies(TmdbApi.API_KEY, TmdbApi.DEFAULT_LANGUAGE, pageCounter, TmdbApi.DEFAULT_REGION)
+    private fun getUpcomingMovies() {
+        api.upcomingMovies(TmdbApi.API_KEY, TmdbApi.DEFAULT_LANGUAGE, pageCounter, "")
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe {
+                    moviesWithGenres = it.results.map { movie ->
+                        movie.copy(genres = Cache.genres.filter { movie.genreIds?.contains(it.id) == true })
+                    }.toMutableList()
+                    if (pageCounter == 1.toLong()){
+                        homeAdapter = HomeAdapter(moviesWithGenres, this)
+                        recyclerView.adapter = homeAdapter
+                    } else {
+                        homeAdapter.addData(moviesWithGenres)
+                        manager.scrollToPosition(position)
+                    }
+
+                    progressBar.visibility = View.GONE
+                }
     }
 
     override fun onItemClick(position: Int) {
@@ -83,8 +102,8 @@ class HomeActivity : AppCompatActivity(), HomeAdapter.OnItemListener, InfiniteSc
 
     override fun onLoadMore() {
         Handler().postDelayed({
-            homeAdapter.addData(getNewPage())
+            getNewPage()
             infiniteScrollListener.setLoaded()
-        }, 2000)
+        }, 0)
     }
 }

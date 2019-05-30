@@ -45,8 +45,7 @@ class HomeAdapter(private val movies: MutableList<Movie>, private val mOnItemLis
 
     interface OnItemListener { fun onItemClick(position: Int)}
 
-    fun addData(movies: MutableList<Movie>) {
-        movies.addAll(movies)
-        notifyDataSetChanged()
+    fun addData(moviesNewPage: MutableList<Movie>) {
+        movies.addAll(moviesNewPage)
     }
 }
