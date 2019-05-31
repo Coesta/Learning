@@ -2,37 +2,33 @@ package com.leocoesta.sobremim
 
 import android.content.Context
 import android.databinding.DataBindingUtil
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import com.leocoesta.sobremim.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private val meuNome: MeuNome = MeuNome(meuNome = "Leonardo Costa")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        findViewById<Button>(R.id.enviar_button).setOnClickListener {
-            definirApelido(it)
-        }
+        binding.enviarButton.setOnClickListener { definirApelido(it) }
+        binding.meuNome = meuNome
+
     }
 
     private fun definirApelido(view: View) {
-        val apelidoEdit = findViewById<EditText>(R.id.apelido_edit)
-        val apelidoText = findViewById<TextView>(R.id.apelido_text)
-
-        apelidoText.text = apelidoEdit.text
-        apelidoEdit.visibility = View.GONE
-        view.visibility = View.GONE
-        apelidoText.visibility = View.VISIBLE
+        binding.apply {
+            meuNome?.meuApelido = apelidoEdit.text.toString()
+            invalidateAll()
+            apelidoEdit.visibility = View.GONE
+            enviarButton.visibility = View.GONE
+            apelidoText.visibility = View.VISIBLE
+        }
 
         esconderTeclado(view)
     }

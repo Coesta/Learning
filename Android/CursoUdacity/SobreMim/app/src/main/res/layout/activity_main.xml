@@ -3,6 +3,13 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+
+        <variable
+            name="meuNome"
+            type="com.leocoesta.sobremim.MeuNome" />
+    </data>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,7 +22,7 @@
             style="@style/nome_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/nome"
+            android:text="@={meuNome.meuNome}"
             android:textAlignment="center" />
 
         <EditText
@@ -39,6 +46,7 @@
         <TextView
             android:id="@+id/apelido_text"
             style="@style/nome_style"
+            android:text="@={meuNome.meuApelido}"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
