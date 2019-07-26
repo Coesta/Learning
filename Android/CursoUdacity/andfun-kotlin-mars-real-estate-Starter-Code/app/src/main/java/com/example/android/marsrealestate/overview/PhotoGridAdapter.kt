@@ -32,7 +32,7 @@ fun bindRecyclerView(recyclerView: RecyclerView, data: List<MarsProperty>?){
     adapter.submitList(data)
 }
 
-class PhotoGridAdapter : ListAdapter<MarsProperty, PhotoGridAdapter.MarsPropertyViewHolder>(DiffCalback) {
+class PhotoGridAdapter(private val onClickListener: OnClickListener) : ListAdapter<MarsProperty, PhotoGridAdapter.MarsPropertyViewHolder>(DiffCalback) {
 
     class MarsPropertyViewHolder(private var binding: GridViewItemBinding) : RecyclerView.ViewHolder(binding.root) {
 
@@ -59,8 +59,18 @@ class PhotoGridAdapter : ListAdapter<MarsProperty, PhotoGridAdapter.MarsProperty
     }
 
     override fun onBindViewHolder(holder: MarsPropertyViewHolder, position: Int) {
+
         val marsProperty = getItem(position)
+
         holder.bind(marsProperty)
+        holder.itemView.setOnClickListener{
+            onClickListener.onClick(marsProperty)
+
+        }
+    }
+
+    class OnClickListener(val clickListener: (marsProperty: MarsProperty) -> Unit) {
+        fun onClick(marsProperty: MarsProperty) = clickListener(marsProperty)
     }
 
 }
