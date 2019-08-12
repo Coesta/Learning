@@ -40,6 +40,6 @@ class HomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.home_fragment, container, false)
         viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
 
-        return view
+        return binding.root
     }
 }
