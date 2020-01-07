@@ -15,7 +15,14 @@ class MainViewModel : ViewModel() {
     init {
         viewModelScope.launch {
             val noticias = NoticiasApi.noticiasApi.obterFeedPrincipal()
+//            println(noticias.feed.falkor.items.first().toString())
+            val noticialTipoBasico = noticias.feed.falkor.items.filter { item ->
+                item.type == "basico"
+            }
+            println("Total Itens: ${noticias.feed.falkor.items.size}")
+            println("Total Itens Filtrados: ${noticias.feed.falkor.items.filter { it.type == "basico" }.size}")
             println(noticias.feed.falkor.items.first().toString())
+            println(noticialTipoBasico.first().toString())
         }
     }
 
