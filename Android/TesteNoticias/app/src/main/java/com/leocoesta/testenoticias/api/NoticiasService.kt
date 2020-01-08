@@ -1,12 +1,14 @@
 package com.leocoesta.testenoticias.api
 
 import com.leocoesta.testenoticias.api.NoticiasService.Companion.URL_BASE
+import com.leocoesta.testenoticias.model.Feed
 import com.leocoesta.testenoticias.model.NoticiasResponse
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface NoticiasService {
 
@@ -16,6 +18,13 @@ interface NoticiasService {
 
     @GET(value = "g1")
     suspend fun obterFeedPrincipal(): NoticiasResponse
+
+    @GET(value = "page/{product}/{id}/{page}")
+    suspend fun obterFeedProximaPagina(
+        @Path("product") product: String,
+        @Path("id") id: String,
+        @Path("page") page: String
+    ): NoticiasResponse
 }
 
 private val moshi = Moshi.Builder()

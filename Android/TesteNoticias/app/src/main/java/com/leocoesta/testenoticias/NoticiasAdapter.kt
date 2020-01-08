@@ -1,19 +1,51 @@
 package com.leocoesta.testenoticias
 
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.databinding.BindingAdapter
+import androidx.paging.PagedList
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.leocoesta.testenoticias.model.NoticiasResponse
+import com.leocoesta.testenoticias.databinding.ItemNoticiaListaBinding
+import com.leocoesta.testenoticias.model.Item
 
-//class NoticiasAdapter : PagedListAdapter<NoticiasResponse, RecyclerView.ViewHolder>(COMPARADOR){
-//
-//    companion object {
-//        private val COMPARADOR = object : DiffUtil.ItemCallback<NoticiasResponse>() {
-//            override fun areItemsTheSame(oldItem: NoticiasResponse, newItem: NoticiasResponse): Boolean =
-//                oldItem.feed. == newItem.fullName
-//
-//            override fun areContentsTheSame(oldItem: Repo, newItem: Repo): Boolean =
-//                oldItem == newItem
-//        }
-//    }
-//}
+@BindingAdapter("listData")
+fun bindRecyclerView(recyclerView: RecyclerView, noticias: List<Item>?) {
+    val adapter = recyclerView.adapter as NoticiasAdapter
+    adapter.submitList(noticias)
+}
+
+class NoticiasAdapter : ListAdapter<Item, NoticiasAdapter.NoticiaViewHolder>(COMPARADOR) {
+
+    companion object {
+        private val COMPARADOR = object : DiffUtil.ItemCallback<Item>() {
+            override fun areItemsTheSame(oldItem: Item, newItem: Item): Boolean =
+                oldItem.content!!.title == newItem.content!!.title
+
+            override fun areContentsTheSame(oldItem: Item, newItem: Item): Boolean =
+                oldItem == newItem
+        }
+    }
+
+    class NoticiaViewHolder(private val binding: ItemNoticiaListaBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+
+        fun bind(item: Item) {
+            binding.item = item
+            binding.executePendingBindings()
+        }
+
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NoticiaViewHolder {
+        return NoticiaViewHolder(ItemNoticiaListaBinding.inflate(LayoutInflater.from(parent.context)))
+    }
+
+    override fun onBindViewHolder(holder: NoticiaViewHolder, position: Int) {
+        val item = getItem(position)
+
+        holder.bind(item!!)
+    }
+}
