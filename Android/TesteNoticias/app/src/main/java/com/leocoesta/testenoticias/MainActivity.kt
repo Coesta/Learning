@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textview.text = "Carregando"
+
         val viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
 
     }
