@@ -6,18 +6,17 @@ import androidx.databinding.BindingAdapter
 import androidx.paging.PagedList
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.leocoesta.testenoticias.databinding.ItemNoticiaListaBinding
 import com.leocoesta.testenoticias.model.Item
 
 @BindingAdapter("listData")
-fun bindRecyclerView(recyclerView: RecyclerView, noticias: List<Item>?) {
+fun bindRecyclerView(recyclerView: RecyclerView, noticias: PagedList<Item>?) {
     val adapter = recyclerView.adapter as NoticiasAdapter
     adapter.submitList(noticias)
 }
 
-class NoticiasAdapter : ListAdapter<Item, NoticiasAdapter.NoticiaViewHolder>(COMPARADOR) {
+class NoticiasAdapter : PagedListAdapter<Item, NoticiasAdapter.NoticiaViewHolder>(COMPARADOR) {
 
     companion object {
         private val COMPARADOR = object : DiffUtil.ItemCallback<Item>() {

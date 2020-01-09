@@ -1,10 +1,8 @@
 package com.leocoesta.testenoticias
 
-import androidx.paging.ItemKeyedDataSource
 import androidx.paging.PageKeyedDataSource
 import com.leocoesta.testenoticias.api.NoticiasService
 import com.leocoesta.testenoticias.model.Item
-import com.leocoesta.testenoticias.model.NoticiasResponse
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
