@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BioAuth</string>
+    <string name="dialogo_biometria_titulo">Autenticação</string>
+    <string name="dialogo_biometria_subtitulo">Autenticar por biometria</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="dialogo_biometria_erro_mensagem">Erro ao autenticar.</string>
+    <string name="dialogo_biometria_falha_mensagem">Falha na autentiação, tente novamente!</string>
+    <string name="logado">Você está logado!</string>
+</resources>
