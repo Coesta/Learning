@@ -10,8 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var nomeTextField: UITextField?
+    var tableViewController: RefeicoesTableViewController?
     
+    @IBOutlet weak var nomeTextField: UITextField?
     @IBOutlet weak var felicidadeTextField: UITextField?
     
     @IBAction func adicionar(_ sender: Any) {
@@ -27,14 +28,13 @@ class ViewController: UIViewController {
             return
         }
         
-        let refeicao2 = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade)
-        print("Refeição: \(refeicao2.nome) ---- Felicidade: \(refeicao2.felicidade)")
+        let refeicao = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade)
+        print("Refeição: \(refeicao.nome) ---- Felicidade: \(refeicao.felicidade)")
         
+        tableViewController?.adicionarRefeicao(refeicao)
         navigationController?.popViewController(animated: true)
         
     }
-    
-
 
 }
 
