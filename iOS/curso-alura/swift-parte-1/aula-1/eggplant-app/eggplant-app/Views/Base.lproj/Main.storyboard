@@ -49,7 +49,7 @@
                     <navigationItem key="navigationItem" id="Q3W-s6-L1m">
                         <barButtonItem key="rightBarButtonItem" title="Adicionar" id="3W4-G8-0pJ">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="CwY-Zr-tmf"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="adicionarRefeicao" id="CwY-Zr-tmf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
