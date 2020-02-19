@@ -16,21 +16,6 @@ class ViewController: UIViewController {
     
     @IBAction func adicionar(_ sender: Any) {
         
-        // Modo 1
-        
-//        if let nomeRefeicao = nomeTextField?.text, let felicidadeRefeicao = felicidadeTextField?.text {
-//
-//            if let felicidade = Int(felicidadeRefeicao) {
-//                let refeicao = Refeicao(nome: nomeRefeicao, felicidade: felicidade)
-//
-//                print("Refeição: \(refeicao.nome) ---- Felicidade: \(refeicao.felicidade)")
-//            } else {
-//                print("Erro ao cadastrar refeição")
-//            }
-//        }
-        
-        // Modo 2
-        
         guard let nomeDaRefeicao = nomeTextField?.text else {
             return
         }
@@ -44,6 +29,8 @@ class ViewController: UIViewController {
         
         let refeicao2 = Refeicao(nome: nomeDaRefeicao, felicidade: felicidade)
         print("Refeição: \(refeicao2.nome) ---- Felicidade: \(refeicao2.felicidade)")
+        
+        navigationController?.popViewController(animated: true)
         
     }
     
