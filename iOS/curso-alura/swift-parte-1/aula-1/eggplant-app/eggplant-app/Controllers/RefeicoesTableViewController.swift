@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RefeicoesTableViewController: UITableViewController, ViewControllerDelegate {
+class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDelegate {
     
     var refeicoes = [Refeicao(nome: "Pizza", felicidade: 5),
                      Refeicao(nome: "Lasanha", felicidade: 5),

@@ -8,13 +8,13 @@
 
 import UIKit
 
-protocol ViewControllerDelegate{
+protocol AdicionaRefeicaoDelegate{
     func adicionarRefeicao(_ refeicao: Refeicao)
 }
 
 class ViewController: UIViewController {
     
-    var delegate: ViewControllerDelegate?
+    var delegate: AdicionaRefeicaoDelegate?
     
     @IBOutlet weak var nomeTextField: UITextField?
     @IBOutlet weak var felicidadeTextField: UITextField?
