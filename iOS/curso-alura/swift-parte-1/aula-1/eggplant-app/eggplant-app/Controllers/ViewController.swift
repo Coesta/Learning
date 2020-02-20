@@ -40,7 +40,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     @objc func adicionarItem() {
-        print("teste")
+        let addItemViewController = AdicionarItensViewController()
+        
+        navigationController?.pushViewController(addItemViewController, animated: true)
     }
     
     // MARK: - UITableViewDataSource
