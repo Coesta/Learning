@@ -55,11 +55,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let tableview = itensTableView {
             tableview.reloadData()
         } else {
-            let alerta = UIAlertController(title: "Desculpe", message: "não foi possível atualizar a tabela", preferredStyle: .alert)
-            let fecharBotao = UIAlertAction(title: "Fechar", style: .cancel, handler: nil)
-            
-            alerta.addAction(fecharBotao)
-            present(alerta, animated: true, completion: nil)
+            Alerta(controller: self).exibir()
         }
     }
     
