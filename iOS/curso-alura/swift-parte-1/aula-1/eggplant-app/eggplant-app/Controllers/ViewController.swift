@@ -57,6 +57,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         } else {
             Alerta(controller: self).exibir(mensagem: "Não foi possível atualizar a tabela!")
         }
+        
+        do {
+            let dados = try NSKeyedArchiver.archivedData(withRootObject: itens, requiringSecureCoding: false)
+            guard let caminho = recuperarDiretorio() else {
+                return
+            }
+            try dados.write(to: caminho)
+        } catch {
+            print(error.localizedDescription)
+        }
+        
     }
     
     // MARK: - UITableViewDataSource
@@ -112,6 +123,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             Alerta(controller: self).exibir(mensagem: "Erro ao ler dados do formulário.")
         }
         
+    }
+    
+    func recuperarDiretorio() -> URL? {
+        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil }
+        
+        let caminho = diretorio.appendingPathComponent("itens")
+        
+        return caminho
     }
     
     func recuperarRefeicaoDoFormulario() -> Refeicao? {
