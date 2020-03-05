@@ -10,33 +10,10 @@ import UIKit
 
 class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDelegate {
     
-    var refeicoes = [Refeicao(nome: "Pizza", felicidade: 5),
-                     Refeicao(nome: "Lasanha", felicidade: 5),
-                     Refeicao(nome: "Pamonha", felicidade: 3)]
+    var refeicoes: [Refeicao] = []
     
     override func viewDidLoad() {
-        
-        do  {
-            guard let caminho = recuperarCaminho() else {
-                return
-            }
-            
-            let dados = try Data(contentsOf: caminho)
-            guard let refeicoesSalvas = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dados) as? Array<Refeicao> else { return }
-            
-            refeicoes = refeicoesSalvas
-            
-        } catch {
-            print(error.localizedDescription)
-        }
-    }
-    
-    func recuperarCaminho() -> URL? {
-        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil }
-        
-        let caminho = diretorio.appendingPathComponent("refeicao")
-        
-        return caminho
+        refeicoes = RefeicaoDao().recuperar()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -82,20 +59,6 @@ class RefeicoesTableViewController: UITableViewController, AdicionaRefeicaoDeleg
     func adicionarRefeicao(_ refeicao: Refeicao){
         refeicoes.append(refeicao)
         tableView.reloadData()
-        
-        guard let caminho = recuperarCaminho() else {
-            return
-        }
-        
-        do {
-            let dados = try NSKeyedArchiver.archivedData(withRootObject: refeicoes, requiringSecureCoding: false)
-            try dados.write(to: caminho)
-        } catch {
-            print(error.localizedDescription)
-        }
-        
-        print(caminho)
-        
-        
+        RefeicaoDao().save(refeicoes)
     }
 }
