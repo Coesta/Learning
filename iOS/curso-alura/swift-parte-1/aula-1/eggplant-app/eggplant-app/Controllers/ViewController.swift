@@ -22,11 +22,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var delegate: AdicionaRefeicaoDelegate?
     
-    var itens : [Item] = [Item(nome: "Molho de Tomate", calorias: 40.0),
-                        Item(nome: "Molho de Limão", calorias: 40.0),
-                        Item(nome: "Sal", calorias: 40.0),
-                        Item(nome: "Molho de apimentado", calorias: 40.0),
-                        Item(nome: "Leite Condensado", calorias: 40.0)]
+    var itens : [Item] = []
     
     var itensSelecionados: [Item] = []
     
@@ -39,20 +35,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func viewDidLoad() {
         let botaoAdicionarItem = UIBarButtonItem(title: "Adicionar", style: .plain, target: self, action: #selector(adicionarItem))
-        
         navigationItem.rightBarButtonItem = botaoAdicionarItem
-        
-        guard let diretorio = recuperarDiretorio() else {
-            return
-        }
-        
-        do {
-            let dados = try Data(contentsOf: diretorio)
-            let itensSalvos = try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dados) as! Array<Item>
-            itens = itensSalvos
-        } catch {
-            print(error.localizedDescription)
-        }
+        recuperarItens()
+    }
+    
+    func recuperarItens() {
+        itens = ItemDao().recuperar()
     }
     
     @objc func adicionarItem() {
@@ -63,22 +51,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func add(_ item: Item) {
         itens.append(item)
-        
+        ItemDao().save(itens)
         if let tableview = itensTableView {
             tableview.reloadData()
         } else {
             Alerta(controller: self).exibir(mensagem: "Não foi possível atualizar a tabela!")
         }
         
-        do {
-            let dados = try NSKeyedArchiver.archivedData(withRootObject: itens, requiringSecureCoding: false)
-            guard let caminho = recuperarDiretorio() else {
-                return
-            }
-            try dados.write(to: caminho)
-        } catch {
-            print(error.localizedDescription)
-        }
+        
         
     }
     
@@ -135,14 +115,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             Alerta(controller: self).exibir(mensagem: "Erro ao ler dados do formulário.")
         }
         
-    }
-    
-    func recuperarDiretorio() -> URL? {
-        guard let diretorio = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first else { return nil }
-        
-        let caminho = diretorio.appendingPathComponent("itens")
-        
-        return caminho
     }
     
     func recuperarRefeicaoDoFormulario() -> Refeicao? {
