@@ -13,6 +13,8 @@
 		A58DEAD82416700900CA8F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58DEAD62416700900CA8F27 /* Main.storyboard */; };
 		A58DEADA2416700A00CA8F27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A58DEAD92416700A00CA8F27 /* Assets.xcassets */; };
 		A58DEADD2416700A00CA8F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58DEADB2416700A00CA8F27 /* LaunchScreen.storyboard */; };
+		A58DEAE52416B48200CA8F27 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DEAE42416B48200CA8F27 /* Viagem.swift */; };
+		A58DEAE72416B66000CA8F27 /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DEAE62416B66000CA8F27 /* ViagemDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A58DEAD92416700A00CA8F27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A58DEADC2416700A00CA8F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A58DEADE2416700A00CA8F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A58DEAE42416B48200CA8F27 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		A58DEAE62416B66000CA8F27 /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViagemDAO.swift; path = "../../../../../../../Downloads/Arquivos Projeto/ViagemDAO.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				A58DEAD02416700900CA8F27 /* AppDelegate.swift */,
 				A58DEAD22416700900CA8F27 /* SceneDelegate.swift */,
 				A58DEAD42416700900CA8F27 /* ViewController.swift */,
+				A58DEAE42416B48200CA8F27 /* Viagem.swift */,
+				A58DEAE62416B66000CA8F27 /* ViagemDAO.swift */,
 				A58DEAD62416700900CA8F27 /* Main.storyboard */,
 				A58DEAD92416700A00CA8F27 /* Assets.xcassets */,
 				A58DEADB2416700A00CA8F27 /* LaunchScreen.storyboard */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58DEAE52416B48200CA8F27 /* Viagem.swift in Sources */,
+				A58DEAE72416B66000CA8F27 /* ViagemDAO.swift in Sources */,
 				A58DEAD52416700900CA8F27 /* ViewController.swift in Sources */,
 				A58DEAD12416700900CA8F27 /* AppDelegate.swift in Sources */,
 				A58DEAD32416700900CA8F27 /* SceneDelegate.swift in Sources */,

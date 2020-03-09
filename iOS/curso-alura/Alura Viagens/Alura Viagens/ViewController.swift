@@ -11,12 +11,16 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tabelaViagens: UITableView!
+    @IBOutlet weak var viewHoteis: UIView!
+    @IBOutlet weak var viewPacotes: UIView!
     
-    let listaViagens: Array<String> = ["Rio de Janeiro", "Ceará", "São Paulo"]
+    let listaViagens: Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabelaViagens.dataSource = self
+        self.viewHoteis.layer.cornerRadius = 10
+        self.viewPacotes.layer.cornerRadius = 10
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -25,7 +29,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = listaViagens[indexPath.row]
+        let viagemAtual = listaViagens[indexPath.row]
+        cell.textLabel?.text = viagemAtual.titulo
         return cell
     }
 
