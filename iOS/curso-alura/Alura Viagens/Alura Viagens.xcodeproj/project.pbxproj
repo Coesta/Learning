@@ -15,6 +15,12 @@
 		A58DEADD2416700A00CA8F27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58DEADB2416700A00CA8F27 /* LaunchScreen.storyboard */; };
 		A58DEAE52416B48200CA8F27 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DEAE42416B48200CA8F27 /* Viagem.swift */; };
 		A58DEAE72416B66000CA8F27 /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DEAE62416B66000CA8F27 /* ViagemDAO.swift */; };
+		A58DEAE92416BDB200CA8F27 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DEAE82416BDB200CA8F27 /* TableViewCell.swift */; };
+		A58DEAF22416C66300CA8F27 /* img5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A58DEAED2416C66300CA8F27 /* img5.jpg */; };
+		A58DEAF32416C66300CA8F27 /* img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A58DEAEE2416C66300CA8F27 /* img4.jpg */; };
+		A58DEAF42416C66300CA8F27 /* img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A58DEAEF2416C66300CA8F27 /* img3.jpg */; };
+		A58DEAF52416C66300CA8F27 /* img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A58DEAF02416C66300CA8F27 /* img2.jpg */; };
+		A58DEAF62416C66300CA8F27 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = A58DEAF12416C66300CA8F27 /* img1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,13 @@
 		A58DEADE2416700A00CA8F27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A58DEAE42416B48200CA8F27 /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
 		A58DEAE62416B66000CA8F27 /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViagemDAO.swift; path = "../../../../../../../Downloads/Arquivos Projeto/ViagemDAO.swift"; sourceTree = "<group>"; };
+		A58DEAE82416BDB200CA8F27 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A58DEAED2416C66300CA8F27 /* img5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img5.jpg; sourceTree = "<group>"; };
+		A58DEAEE2416C66300CA8F27 /* img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img4.jpg; sourceTree = "<group>"; };
+		A58DEAEF2416C66300CA8F27 /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
+		A58DEAF02416C66300CA8F27 /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
+		A58DEAF12416C66300CA8F27 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		A58DEAFC2417B28900CA8F27 /* ViagemDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +74,72 @@
 			isa = PBXGroup;
 			children = (
 				A58DEAD02416700900CA8F27 /* AppDelegate.swift */,
+				A58DEAF72417B1CB00CA8F27 /* Model */,
+				A58DEAF82417B20F00CA8F27 /* Home */,
+				A58DEAFB2417B28000CA8F27 /* ViagemDao */,
 				A58DEAD22416700900CA8F27 /* SceneDelegate.swift */,
-				A58DEAD42416700900CA8F27 /* ViewController.swift */,
-				A58DEAE42416B48200CA8F27 /* Viagem.swift */,
 				A58DEAE62416B66000CA8F27 /* ViagemDAO.swift */,
+				A58DEAEC2416C66300CA8F27 /* Assets */,
 				A58DEAD62416700900CA8F27 /* Main.storyboard */,
 				A58DEAD92416700A00CA8F27 /* Assets.xcassets */,
 				A58DEADB2416700A00CA8F27 /* LaunchScreen.storyboard */,
 				A58DEADE2416700A00CA8F27 /* Info.plist */,
 			);
 			path = "Alura Viagens";
+			sourceTree = "<group>";
+		};
+		A58DEAEC2416C66300CA8F27 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A58DEAED2416C66300CA8F27 /* img5.jpg */,
+				A58DEAEE2416C66300CA8F27 /* img4.jpg */,
+				A58DEAEF2416C66300CA8F27 /* img3.jpg */,
+				A58DEAF02416C66300CA8F27 /* img2.jpg */,
+				A58DEAF12416C66300CA8F27 /* img1.png */,
+			);
+			name = Assets;
+			path = "../../../../../../../Downloads/Arquivos Projeto/Assets";
+			sourceTree = "<group>";
+		};
+		A58DEAF72417B1CB00CA8F27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A58DEAE42416B48200CA8F27 /* Viagem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A58DEAF82417B20F00CA8F27 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A58DEAFA2417B25A00CA8F27 /* Controller */,
+				A58DEAF92417B25300CA8F27 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A58DEAF92417B25300CA8F27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A58DEAE82416BDB200CA8F27 /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A58DEAFA2417B25A00CA8F27 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A58DEAD42416700900CA8F27 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A58DEAFB2417B28000CA8F27 /* ViagemDao */ = {
+			isa = PBXGroup;
+			children = (
+				A58DEAFC2417B28900CA8F27 /* ViagemDAO.swift */,
+			);
+			path = ViagemDao;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +201,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A58DEADD2416700A00CA8F27 /* LaunchScreen.storyboard in Resources */,
+				A58DEAF62416C66300CA8F27 /* img1.png in Resources */,
+				A58DEAF42416C66300CA8F27 /* img3.jpg in Resources */,
+				A58DEAF32416C66300CA8F27 /* img4.jpg in Resources */,
+				A58DEAF22416C66300CA8F27 /* img5.jpg in Resources */,
 				A58DEADA2416700A00CA8F27 /* Assets.xcassets in Resources */,
 				A58DEAD82416700900CA8F27 /* Main.storyboard in Resources */,
+				A58DEAF52416C66300CA8F27 /* img2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +221,7 @@
 				A58DEAE52416B48200CA8F27 /* Viagem.swift in Sources */,
 				A58DEAE72416B66000CA8F27 /* ViagemDAO.swift in Sources */,
 				A58DEAD52416700900CA8F27 /* ViewController.swift in Sources */,
+				A58DEAE92416BDB200CA8F27 /* TableViewCell.swift in Sources */,
 				A58DEAD12416700900CA8F27 /* AppDelegate.swift in Sources */,
 				A58DEAD32416700900CA8F27 /* SceneDelegate.swift in Sources */,
 			);
