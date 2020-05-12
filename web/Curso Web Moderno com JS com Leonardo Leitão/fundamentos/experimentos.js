@@ -14,7 +14,7 @@ console.log(module.exports === this)
 console.log(module.exports)
 
 // criando uma variável maluca sem var e sem let
-abc = 3
+abc = 3 // não fazer isso em casa kkk
 console.log(global.abc)
 
 // module.experts = { c: 456, d: false, e: 'teste' }
