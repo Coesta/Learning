@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tour-of-heroes-baea": {
+      "hosting": {
+        "tour-of-heroes-baea": [
+          "tour-of-heroes-baea"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tour-of-heroes-baea"
+  }
+}

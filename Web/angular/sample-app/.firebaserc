@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sample-app-angular-2dc99"
+  },
+  "targets": {
+    "sample-app-angular-2dc99": {
+      "hosting": {
+        "sample-app": [
+          "sample-app-angular-2dc99"
+        ]
+      }
+    }
+  }
+}
