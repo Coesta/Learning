@@ -21,7 +21,7 @@ class Campo {
       return;
     }
 
-    if (deltaLinha <= 1 && deltaColuna == 1) {
+    if (deltaLinha <= 1 && deltaColuna <= 1) {
       vizinhos.add(vizinho);
     }
   }
