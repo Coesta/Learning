@@ -49,11 +49,11 @@ class Auth with ChangeNotifier {
     if (responseBody["error"] != null) {
       throw AuthException(responseBody['error']['message']);
     } else {
-      _token = responseBody['idToken'];
-      _userId = responseBody['localId'];
+      _token = responseBody["idToken"];
+      _userId = responseBody["localId"];
       _expiryDate = DateTime.now().add(
         Duration(
-          seconds: int.parse(responseBody['expiresIn']),
+          seconds: int.parse(responseBody["expiresIn"]),
         ),
       );
 
@@ -88,7 +88,7 @@ class Auth with ChangeNotifier {
       return Future.value();
     }
 
-    final expiryDate = DateTime.parse(userData["expireDate"]);
+    final expiryDate = DateTime.parse(userData["expiryDate"]);
     if (expiryDate.isBefore(DateTime.now())) {
       return Future.value();
     }
