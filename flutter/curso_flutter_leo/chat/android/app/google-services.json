@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1065369794962",
+    "firebase_url": "https://friendlyeats-e0690.firebaseio.com",
+    "project_id": "friendlyeats-e0690",
+    "storage_bucket": "friendlyeats-e0690.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065369794962:android:1ed02d191d614afb17e94b",
+        "android_client_info": {
+          "package_name": "br.com.leocoesta.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065369794962-vr9716qh49p407sdf532antipr6j015f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrCfadkRYS1YjAAh_1wH1bowGVUya4cAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065369794962-vr9716qh49p407sdf532antipr6j015f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
