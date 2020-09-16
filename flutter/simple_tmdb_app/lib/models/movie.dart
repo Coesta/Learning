@@ -4,6 +4,7 @@ class Movie {
   final String overview;
   final String releaseDate;
   final String backdropPath;
+  final String originalLanguage;
   final String voteAverage;
 
   Movie({
@@ -12,6 +13,7 @@ class Movie {
     this.overview,
     this.releaseDate,
     this.backdropPath,
+    this.originalLanguage,
     this.voteAverage,
   });
 }

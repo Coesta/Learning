@@ -28,18 +28,37 @@ class DetailPage extends StatelessWidget {
                   DateFormat('dd/MM/yyyy')
                       .format(DateTime.parse(movie.releaseDate)),
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 18,
                     color: Colors.black54,
                   ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Original Language ', style: TextStyle(fontSize: 16)),
+                    Container(
+                      child: Text(movie.originalLanguage,
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          )),
+                      padding: EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        color: Colors.black38,
+                        borderRadius: BorderRadius.all(Radius.circular(5)),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(10),
                 child: Text(
                   movie.overview,
-                  style: TextStyle(
-                    fontSize: 25,
-                  ),
+                  style: TextStyle(fontSize: 22),
                 ),
               ),
             ],
