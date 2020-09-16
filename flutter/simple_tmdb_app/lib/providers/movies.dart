@@ -34,6 +34,7 @@ class Movies with ChangeNotifier {
             overview: element['overview'],
             releaseDate: element['release_date'],
             backdropPath: element['backdrop_path'],
+            voteAverage: element['vote_average'].toString(),
           ),
         );
       });

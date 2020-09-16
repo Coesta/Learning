@@ -15,27 +15,30 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('Most Popular Movies'),
       ),
-      body: FutureBuilder(
-        future: Provider.of<Movies>(context, listen: false).loadMovies(),
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return Center(child: CircularProgressIndicator());
-          } else if (snapshot.error != null) {
-            return Center(child: Text("Ocorreu um erro ao carregar os filmes"));
-          } else {
-            return Consumer<Movies>(
-              builder: (context, movies, child) {
-                return ListView.builder(
-                  itemCount: movies.itemsCount,
-                  itemBuilder: (context, index) => MovieItem(
-                    key: ValueKey(movies.popularMovies[index].id),
-                    movie: movies.popularMovies[index],
-                  ),
-                );
-              },
-            );
-          }
-        },
+      body: SafeArea(
+        child: FutureBuilder(
+          future: Provider.of<Movies>(context, listen: false).loadMovies(),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.waiting) {
+              return Center(child: CircularProgressIndicator());
+            } else if (snapshot.error != null) {
+              return Center(
+                  child: Text("Ocorreu um erro ao carregar os filmes"));
+            } else {
+              return Consumer<Movies>(
+                builder: (context, movies, child) {
+                  return ListView.builder(
+                    itemCount: movies.itemsCount,
+                    itemBuilder: (context, index) => MovieItem(
+                      key: ValueKey(movies.popularMovies[index].id),
+                      movie: movies.popularMovies[index],
+                    ),
+                  );
+                },
+              );
+            }
+          },
+        ),
       ),
     );
   }
